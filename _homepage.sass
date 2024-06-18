@@ -1,0 +1,147 @@
+@import url(https://db.onlinewebfonts.com/c/e280bead88c9409dfc805618ee9c27bc?family=Tomica-Black)
+
+@import url(https://db.onlinewebfonts.com/c/6d8bd15f2d177cacf042c5ea836b523e?family=Tomica-Light)
+@import url(https://db.onlinewebfonts.com/c/c90c20620fd8689fa501553faf45997d?family=Tomica)
+$breakpoint: 1000px
+
+@import homeContainer
+.homepage
+    height: auto
+    display: flex
+    flex-direction: column
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    
+.navbar
+  display: flex
+  backdrop-filter: blur(4px)
+  background: rgba(255, 255, 255, 0.096)
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.062)
+  font-family: "Tomica"
+  align-items: center
+  height: 4rem
+  padding: 6px
+  padding-left: 24px
+  justify-content: space-between
+  .Navitems2
+    #Connect
+      background: transparent
+      border: 1px solid white
+      border-radius: 3rem
+      color: black
+      font-weight: bold
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.151)
+      
+    #Submit
+      background: transparent
+      border: 2px solid rgba(28,217,160 ,1 )
+      border-radius: 3rem
+      color: black
+      font-weight: bold
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.151)
+
+    &.hide
+        @media screen and ( max-width: 700px  )
+            display: none
+  .hamburger
+    margin-top: 8px
+    margin-left: 35px
+    width: 25px
+    display: none
+    height: 25px
+    
+
+  .Navitems1
+    
+      
+    
+    #EarlyAccess
+      border: 1px solid black
+      color: black
+  
+    img
+        @media screen and ( max-width: 700px )
+            width: 150px  
+            height: 50px  
+            margin-top: 8px
+    .hamburger
+        @media screen and ( max-width:700px )
+            display: flex
+            
+    .hide
+        @media screen and ( max-width:700px  )
+            display: none
+
+            
+    display: flex
+    ul
+      display: flex
+      li
+        display: flex
+        align-items: center
+        margin-left: 2rem
+        @media screen and ( max-width: 700px )
+            margin-left: 0px
+            
+        list-style: none
+
+  .Navitems2
+    display: flex
+    
+            
+    
+    margin-right: 3rem
+    align-items: center
+    li
+      list-style: none
+      margin-right: 0.5rem
+
+  .hamburger
+    
+    flex-direction: column
+    justify-content: space-around
+    
+    cursor: pointer
+
+    div
+      width: 100%
+      height: 3px
+      background-color: black
+
+.overlay
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  background-color: rgba(0,0,0,0.9)
+  overflow-x: hidden
+  transition: 0.5s
+
+.overlay-content
+  position: relative
+  top: 25%
+  width: 100%
+  text-align: center
+  margin-top: 30px
+
+  a
+    padding: 8px
+    text-decoration: none
+    font-size: 36px
+    color: #818181
+    display: block
+    transition: 0.3s
+
+    &:hover
+      color: #f1f1f1
+
+.closebtn
+  position: absolute
+  top: 20px
+  right: 45px
+  font-size: 60px
+.hide
+    display: none
